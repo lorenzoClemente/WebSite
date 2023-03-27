@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="storestyle.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="saloonCen">
+        <h1>Beauty Saloon</h1>
+        <p><span>Beauty by Jackie</span></p>
+        <p>Contact: 469-732-0777 | Instagram: XOBeautyXJ</p>
+    </div>
+    
+    <nav class="navbar">
+        <a href="">Home</a>
+        <a href="">About</a>
+        
+        <div class="dropdown">
+            <button class="buttonDown">Service</button>
+        <div class="drpArea" id="blobdown">
+            <a href="">Service1</a>
+            <a href="">Service2</a>
+            <a href="">Service3</a>
+
+        </div>
+
+        </div>
+    </nav>
+
+
+</div>
+
+<script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+    
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(e) {
+      if (!e.target.matches('.dropbtn')) {
+      var myDropdown = document.getElementById("myDropdown");
+        if (myDropdown.classList.contains('show')) {
+          myDropdown.classList.remove('show');
+        }
+      }
+    }
+    </script>
+
+</body>
+</html>
